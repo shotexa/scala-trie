@@ -20,4 +20,16 @@ class Trie(elements: String*) {
     this
   }
 
+  def contains(word: String): Boolean = {
+    var current = root
+    for (char <- word) {
+        current.children.get(char) match {
+            case Some(node) => current = node
+            case None => return false
+        }
+    }
+
+    true
+  }
+
 }
