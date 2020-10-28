@@ -1,2 +1,3 @@
-# Trie - trie data structure for scala
+# Trie 
 
+Simple implementation of Prefix tree data structure in scala
